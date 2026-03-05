@@ -3,6 +3,7 @@ package org.delcom.data
 import kotlinx.serialization.Serializable
 import org.delcom.entities.RefreshToken
 
+
 @Serializable
 data class RefreshTokenRequest(
     var userId: String = "",

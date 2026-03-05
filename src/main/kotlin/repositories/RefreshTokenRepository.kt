@@ -10,6 +10,7 @@ import org.jetbrains.exposed.sql.and
 import org.jetbrains.exposed.sql.deleteWhere
 import java.util.UUID
 
+
 class RefreshTokenRepository : IRefreshTokenRepository {
     override suspend fun getByToken(refreshToken: String, authToken: String): RefreshToken? = suspendTransaction {
         RefreshTokenDAO
